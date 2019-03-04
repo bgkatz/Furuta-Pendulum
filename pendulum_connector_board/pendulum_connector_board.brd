@@ -156,7 +156,7 @@
 </layers>
 <board>
 <plain>
-<text x="-7.52" y="-3.2" size="1" layer="25" font="vector">Ben Katz
+<text x="-8.32" y="-14.4" size="1" layer="25" font="vector">Ben Katz
 Pendulum Controller
 Connector Breakout</text>
 <text x="-0.32" y="-7.52" size="1" layer="25" font="vector">MOTOR</text>

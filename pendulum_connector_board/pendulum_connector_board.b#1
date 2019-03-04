@@ -162,10 +162,6 @@ Connector Breakout</text>
 <text x="-0.32" y="-7.52" size="1" layer="25" font="vector">MOTOR</text>
 <text x="-12.48" y="-7.52" size="1" layer="25" font="vector">DC</text>
 <text x="4.32" y="12" size="1" layer="25" font="vector">PROG</text>
-<circle x="22.5" y="12" radius="1.5" width="0" layer="22"/>
-<circle x="22.5" y="-12" radius="1.5" width="0" layer="22"/>
-<circle x="-22.5" y="-12" radius="1.5" width="0" layer="22"/>
-<circle x="-22.5" y="12" radius="1.5" width="0" layer="22"/>
 <wire x1="23.697159375" y1="-15.83333125" x2="25.437209375" y2="12.852940625" width="0" layer="22" curve="60.555596"/>
 <wire x1="25.437209375" y1="12.852940625" x2="22.759609375" y2="14.499996875" width="0" layer="22" curve="63.193394"/>
 <wire x1="-22.759609375" y1="14.5" x2="22.759609375" y2="14.5" width="0" layer="22"/>
@@ -174,10 +170,6 @@ Connector Breakout</text>
 <wire x1="-23.697159375" y1="-15.83333125" x2="-18.708290625" y2="-18.499996875" width="0" layer="22" curve="56.25096"/>
 <wire x1="-18.708290625" y1="-18.5" x2="18.708290625" y2="-18.5" width="0" layer="22"/>
 <wire x1="18.708290625" y1="-18.5" x2="23.697165625" y2="-15.833334375" width="0" layer="22" curve="56.250995"/>
-<circle x="22.5" y="-12" radius="1.5" width="0" layer="22"/>
-<circle x="22.5" y="12" radius="1.5" width="0" layer="22"/>
-<circle x="-22.5" y="12" radius="1.5" width="0" layer="22"/>
-<circle x="-22.5" y="-12" radius="1.5" width="0" layer="22"/>
 </plain>
 <libraries>
 <library name="con-molex-micro-fit-3_0">

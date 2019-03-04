@@ -4018,18 +4018,18 @@ design rules under a new name.</description>
 </signal>
 <signal name="ENC_B">
 <contactref element="U$2" pad="P$6"/>
-<contactref element="U$3" pad="37"/>
-<wire x1="2.78" y1="10.29" x2="21.365" y2="-0.635" width="0" layer="19" extent="1-1"/>
+<contactref element="U$3" pad="56"/>
+<wire x1="8.28" y1="2.79" x2="21.365" y2="-0.635" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC_A">
 <contactref element="U$2" pad="P$5"/>
-<contactref element="U$3" pad="38"/>
-<wire x1="2.78" y1="9.79" x2="21.365" y2="0.635" width="0" layer="19" extent="1-1"/>
+<contactref element="U$3" pad="57"/>
+<wire x1="8.78" y1="2.79" x2="21.365" y2="0.635" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC_Z">
 <contactref element="U$2" pad="P$16"/>
-<contactref element="U$3" pad="36"/>
-<wire x1="2.78" y1="10.79" x2="22.635" y2="-0.635" width="0" layer="19" extent="1-1"/>
+<contactref element="U$3" pad="55"/>
+<wire x1="7.78" y1="2.79" x2="22.635" y2="-0.635" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="U$2" pad="P$1"/>

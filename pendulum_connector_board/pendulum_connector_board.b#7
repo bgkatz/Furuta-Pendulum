@@ -429,28 +429,28 @@ http://www.jst-mfg.com&lt;p&gt;
 <text x="-6.35" y="1.905" size="1.27" layer="25" rot="R270">&gt;NAME</text>
 <text x="5.08" y="1.905" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
 </package>
-<package name="BM07B-SRSS-TB">
-<description>&lt;b&gt;Shrouded Header, top entry type&lt;/b&gt;</description>
-<wire x1="-4.373" y1="1.473" x2="-4.373" y2="-1.427" width="0.254" layer="51"/>
-<wire x1="-4.373" y1="-1.427" x2="4.373" y2="-1.427" width="0.254" layer="51"/>
-<wire x1="4.373" y1="-1.427" x2="4.373" y2="1.473" width="0.254" layer="51"/>
-<wire x1="4.373" y1="1.473" x2="-4.373" y2="1.473" width="0.254" layer="51"/>
-<wire x1="-4.373" y1="-0.5" x2="-4.373" y2="-1.427" width="0.254" layer="21"/>
-<wire x1="-4.373" y1="-1.427" x2="-4" y2="-1.427" width="0.254" layer="21"/>
-<wire x1="4.373" y1="-0.5" x2="4.373" y2="-1.427" width="0.254" layer="21"/>
-<wire x1="4.373" y1="-1.427" x2="4" y2="-1.427" width="0.254" layer="21"/>
-<wire x1="-3" y1="1.473" x2="3" y2="1.473" width="0.254" layer="21"/>
-<smd name="7" x="-3" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
-<smd name="6" x="-2" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
-<smd name="5" x="-1" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
-<smd name="4" x="0" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
-<smd name="3" x="1" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
-<smd name="2" x="2" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
-<smd name="1" x="3" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
-<smd name="FIT@1" x="4.3" y="0.9" dx="1.2" dy="1.8" layer="1"/>
-<smd name="FIT@2" x="-4.3" y="0.9" dx="1.2" dy="1.8" layer="1"/>
-<text x="-6.985" y="1.905" size="1.27" layer="25" rot="R270">&gt;NAME</text>
-<text x="5.715" y="1.905" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
+<package name="SM07B-SRSS-TB">
+<description>&lt;b&gt;Shrouded Header, side entry type&lt;/b&gt;</description>
+<wire x1="-4.373" y1="-1.473" x2="-4.373" y2="2.523" width="0.254" layer="51"/>
+<wire x1="-4.373" y1="2.523" x2="4.373" y2="2.523" width="0.254" layer="51"/>
+<wire x1="4.373" y1="2.523" x2="4.373" y2="-1.473" width="0.254" layer="51"/>
+<wire x1="4.373" y1="-1.473" x2="-4.373" y2="-1.473" width="0.254" layer="51"/>
+<wire x1="-4.373" y1="0.5" x2="-4.373" y2="2.523" width="0.254" layer="21"/>
+<wire x1="-4.373" y1="2.523" x2="-4" y2="2.523" width="0.254" layer="21"/>
+<wire x1="4.373" y1="0.5" x2="4.373" y2="2.523" width="0.254" layer="21"/>
+<wire x1="4.373" y1="2.523" x2="4" y2="2.523" width="0.254" layer="21"/>
+<wire x1="-3" y1="-1.473" x2="3" y2="-1.473" width="0.254" layer="21"/>
+<smd name="1" x="-3" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="-2" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="3" x="-1" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="0" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="5" x="1" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="6" x="2" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="7" x="3" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="FIT@1" x="-4.3" y="-0.9" dx="1.2" dy="1.8" layer="1"/>
+<smd name="FIT@2" x="4.3" y="-0.9" dx="1.2" dy="1.8" layer="1"/>
+<text x="-5.715" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="6.985" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -711,7 +711,7 @@ design rules under a new name.</description>
 <element name="U$5" library="Ben_Library" package="2X12X.05" value="HEADER_2X12" x="-24" y="0"/>
 <element name="U$4" library="Ben_Library" package="1X25X.05" value="HEADER_1X25" x="-2.5" y="-17" rot="R90"/>
 <element name="U$2" library="Ben_Library" package="2X12X.05" value="HEADER_2X12" x="22" y="0"/>
-<element name="X1" library="con-jst2" package="BM07B-SRSS-TB" value="BM07B-SRSS-TB" x="5.12" y="16.2" smashed="yes"/>
+<element name="X1" library="con-jst2" package="SM07B-SRSS-TB" value="SM07B-SRSS-TB" x="5.12" y="16.28" smashed="yes" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -760,7 +760,7 @@ design rules under a new name.</description>
 <wire x1="-3.52" y1="10.4" x2="-12.16" y2="10.4" width="0.6096" layer="1"/>
 <wire x1="-12.16" y1="10.4" x2="-12.45" y2="10.69" width="0.6096" layer="1"/>
 <wire x1="-12.45" y1="14.575" x2="-12.45" y2="10.69" width="0.6096" layer="1"/>
-<wire x1="6.12" y1="14.575" x2="6.12" y2="10.52" width="0.6096" layer="1"/>
+<wire x1="6.12" y1="13.305" x2="6.12" y2="10.52" width="0.6096" layer="1"/>
 <wire x1="6.12" y1="10.52" x2="6.24" y2="10.4" width="0.6096" layer="1"/>
 <wire x1="-3.73" y1="14.575" x2="-3.73" y2="10.61" width="0.6096" layer="1"/>
 <wire x1="-3.73" y1="10.61" x2="-3.52" y2="10.4" width="0.6096" layer="1"/>
@@ -914,7 +914,7 @@ design rules under a new name.</description>
 <via x="-11.36" y="11.68" extent="1-16" drill="0.3"/>
 <wire x1="-11.36" y1="11.68" x2="-11.36" y2="14.485" width="0.6096" layer="1"/>
 <wire x1="-11.36" y1="14.485" x2="-11.45" y2="14.575" width="0.6096" layer="1"/>
-<wire x1="8.12" y1="14.575" x2="8.12" y2="10.12" width="0.6096" layer="1"/>
+<wire x1="8.12" y1="13.305" x2="8.12" y2="10.12" width="0.6096" layer="1"/>
 <wire x1="8.12" y1="10.12" x2="8.16" y2="10.08" width="0.6096" layer="1"/>
 <via x="8.16" y="10.08" extent="1-16" drill="0.3"/>
 <via x="6.64" y="8.56" extent="1-16" drill="0.3"/>
@@ -1090,7 +1090,7 @@ design rules under a new name.</description>
 <signal name="USART_TX">
 <contactref element="U$2" pad="P$19"/>
 <contactref element="X1" pad="6"/>
-<wire x1="3.12" y1="14.575" x2="3.12" y2="13.04" width="0.16" layer="1"/>
+<wire x1="3.12" y1="13.305" x2="3.12" y2="13.04" width="0.16" layer="1"/>
 <wire x1="3.12" y1="13.04" x2="3.2" y2="12.96" width="0.16" layer="1"/>
 <via x="3.2" y="12.96" extent="1-16" drill="0.3"/>
 <wire x1="3.2" y1="12.96" x2="16.32" y2="12.96" width="0.16" layer="16"/>
@@ -1107,7 +1107,7 @@ design rules under a new name.</description>
 <wire x1="23.035" y1="0.635" x2="23.52" y2="1.12" width="0.16" layer="1"/>
 <wire x1="23.52" y1="1.12" x2="23.52" y2="7.36" width="0.16" layer="1"/>
 <wire x1="23.52" y1="7.36" x2="22.72" y2="8.16" width="0.16" layer="1"/>
-<wire x1="2.12" y1="14.575" x2="2.12" y2="13" width="0.16" layer="1"/>
+<wire x1="2.12" y1="13.305" x2="2.12" y2="13" width="0.16" layer="1"/>
 <wire x1="2.12" y1="13" x2="2.08" y2="12.96" width="0.16" layer="1"/>
 <via x="2.08" y="12.96" extent="1-16" drill="0.3"/>
 <wire x1="2.08" y1="12.96" x2="2.08" y2="12.8" width="0.16" layer="16"/>
@@ -1128,8 +1128,8 @@ design rules under a new name.</description>
 <wire x1="5.12" y1="5.92" x2="5.12" y2="10.24" width="0.16" layer="16"/>
 <wire x1="5.12" y1="10.24" x2="4.16" y2="11.2" width="0.16" layer="16"/>
 <via x="4.16" y="11.2" extent="1-16" drill="0.3"/>
-<wire x1="4.16" y1="11.2" x2="4.16" y2="14.535" width="0.16" layer="1"/>
-<wire x1="4.16" y1="14.535" x2="4.12" y2="14.575" width="0.16" layer="1"/>
+<wire x1="4.16" y1="11.2" x2="4.16" y2="13.255" width="0.16" layer="1"/>
+<wire x1="4.16" y1="13.255" x2="4.12" y2="13.305" width="0.16" layer="1"/>
 </signal>
 <signal name="TMS">
 <contactref element="U$2" pad="P$5"/>
@@ -1142,7 +1142,7 @@ design rules under a new name.</description>
 <wire x1="6.08" y1="5.92" x2="6.08" y2="10.24" width="0.16" layer="16"/>
 <wire x1="6.08" y1="10.24" x2="5.12" y2="11.2" width="0.16" layer="16"/>
 <via x="5.12" y="11.2" extent="1-16" drill="0.3"/>
-<wire x1="5.12" y1="11.2" x2="5.12" y2="14.575" width="0.16" layer="1"/>
+<wire x1="5.12" y1="11.2" x2="5.12" y2="13.305" width="0.16" layer="1"/>
 </signal>
 <signal name="TCK">
 <contactref element="U$2" pad="P$4"/>
@@ -1155,8 +1155,8 @@ design rules under a new name.</description>
 <wire x1="8.96" y1="10.08" x2="8.96" y2="11.2" width="0.16" layer="16"/>
 <wire x1="8.96" y1="11.2" x2="7.2" y2="11.2" width="0.16" layer="16"/>
 <via x="7.2" y="11.2" extent="1-16" drill="0.3"/>
-<wire x1="7.2" y1="11.2" x2="7.2" y2="14.495" width="0.16" layer="1"/>
-<wire x1="7.2" y1="14.495" x2="7.12" y2="14.575" width="0.16" layer="1"/>
+<wire x1="7.2" y1="11.2" x2="7.2" y2="13.215" width="0.16" layer="1"/>
+<wire x1="7.2" y1="13.215" x2="7.12" y2="13.305" width="0.16" layer="1"/>
 </signal>
 </signals>
 </board>

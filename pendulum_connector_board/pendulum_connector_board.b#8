@@ -164,7 +164,7 @@
 <wire x1="23.697159375" y1="15.83333125" x2="18.708290625" y2="18.499996875" width="0" layer="22" curve="56.25096"/>
 <wire x1="-18.708290625" y1="18.5" x2="18.708290625" y2="18.5" width="0" layer="22"/>
 <wire x1="-18.708290625" y1="18.5" x2="-23.697165625" y2="15.833334375" width="0" layer="22" curve="56.250995"/>
-<text x="-9.76" y="4" size="1" layer="25" font="vector">Ben Katz
+<text x="-7.52" y="-3.2" size="1" layer="25" font="vector">Ben Katz
 Pendulum Controller
 Connector Breakout</text>
 <text x="-0.32" y="-7.52" size="1" layer="25" font="vector">MOTOR</text>

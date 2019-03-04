@@ -156,9 +156,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="77.76" y2="0" width="0" layer="20"/>
-<wire x1="77.76" y1="0" x2="77.76" y2="40" width="0" layer="20"/>
-<wire x1="77.76" y1="40" x2="0" y2="40" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="75" y2="0" width="0" layer="20"/>
+<wire x1="75" y1="0" x2="75" y2="40" width="0" layer="20"/>
+<wire x1="75" y1="40" x2="0" y2="40" width="0" layer="20"/>
 <wire x1="0" y1="40" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
@@ -2072,8 +2072,8 @@ design rules under a new name.</description>
 <contactref element="LED2" pad="C"/>
 <contactref element="X3" pad="3"/>
 <polygon width="0.16" layer="16" isolate="0.16" thermals="no">
-<vertex x="41.12" y="30.08"/>
-<vertex x="55.2" y="30.08"/>
+<vertex x="41.12" y="29.92"/>
+<vertex x="55.2" y="29.92"/>
 <vertex x="55.2" y="10.4"/>
 <vertex x="41.12" y="10.4"/>
 </polygon>
@@ -2543,16 +2543,16 @@ design rules under a new name.</description>
 </polygon>
 </signal>
 <signal name="N$11">
-<via x="3.84" y="36.16" extent="1-16" drill="3"/>
+<via x="3" y="37" extent="1-16" drill="3"/>
 </signal>
 <signal name="N$13">
-<via x="73.6" y="36.32" extent="1-16" drill="3"/>
+<via x="72" y="37" extent="1-16" drill="3"/>
 </signal>
 <signal name="N$14">
-<via x="73.28" y="3.52" extent="1-16" drill="3"/>
+<via x="72" y="3" extent="1-16" drill="3"/>
 </signal>
 <signal name="N$15">
-<via x="2.88" y="2.72" extent="1-16" drill="3"/>
+<via x="3" y="3" extent="1-16" drill="3"/>
 </signal>
 </signals>
 </board>

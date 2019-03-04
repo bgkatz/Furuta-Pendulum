@@ -2075,8 +2075,8 @@ design rules under a new name.</description>
 <contactref element="LED2" pad="C"/>
 <contactref element="X3" pad="3"/>
 <polygon width="0.16" layer="16" isolate="0.16" thermals="no">
-<vertex x="41.12" y="31.04"/>
-<vertex x="55.2" y="31.04"/>
+<vertex x="41.12" y="30.08"/>
+<vertex x="55.2" y="30.08"/>
 <vertex x="55.2" y="10.4"/>
 <vertex x="41.12" y="10.4"/>
 </polygon>
@@ -2186,10 +2186,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="+24V">
 <contactref element="DC" pad="P$2"/>
-<contactref element="U$1" pad="R1"/>
 <contactref element="R3" pad="2"/>
-<wire x1="18.699" y1="21.07" x2="37.33" y2="30.79" width="0" layer="19" extent="1-1"/>
-<wire x1="22.47" y1="6.28" x2="18.699" y2="21.07" width="0" layer="19" extent="1-1"/>
+<contactref element="U$1" pad="C1"/>
+<wire x1="14" y1="21.07" x2="37.33" y2="30.79" width="0" layer="19" extent="1-1"/>
+<wire x1="22.47" y1="6.28" x2="14" y2="21.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V3">
 <contactref element="X2" pad="1"/>
@@ -2476,8 +2476,20 @@ design rules under a new name.</description>
 </signal>
 <signal name="24V_IN">
 <contactref element="J1" pad="3"/>
-<contactref element="U$1" pad="C1"/>
-<wire x1="14" y1="21.07" x2="33.73" y2="10.65" width="0" layer="19" extent="1-1"/>
+<contactref element="U$1" pad="R1"/>
+<wire x1="18.699" y1="21.07" x2="33.73" y2="10.65" width="0" layer="19" extent="1-1"/>
+<polygon width="0.16" layer="1" isolate="0.25">
+<vertex x="31.36" y="9.92"/>
+<vertex x="31.36" y="11.52"/>
+<vertex x="23.52" y="19.36"/>
+<vertex x="16.48" y="19.36"/>
+<vertex x="16.48" y="24.8"/>
+<vertex x="30.88" y="24.8"/>
+<vertex x="35.36" y="20.32"/>
+<vertex x="35.36" y="8.48"/>
+<vertex x="31.36" y="8.48"/>
+<vertex x="31.36" y="10.08"/>
+</polygon>
 </signal>
 <signal name="5V_IN">
 <contactref element="X1" pad="1"/>
