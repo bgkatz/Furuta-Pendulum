@@ -2124,8 +2124,8 @@ http://www.jst-mfg.com&lt;p&gt;
 </class>
 </classes>
 <parts>
-<part name="MOTOR" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS3_?" device="43650-0315"/>
-<part name="DC" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43650-0215"/>
+<part name="MOTOR" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS3_?" device="43650-0300"/>
+<part name="DC" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43650-0200"/>
 <part name="SERIAL" library="con-jst2" deviceset="?M04B-SRSS-TB" device="S" value="SM04B-SRSS-TB"/>
 <part name="ENCODER" library="con-jst2" deviceset="?M05B-SRSS-TB" device="S" value="SM05B-SRSS-TB"/>
 <part name="PENDULUM" library="con-jst2" deviceset="?M06B-SRSS-TB" device="S" value="SM06B-SRSS-TB"/>
@@ -2331,9 +2331,9 @@ http://www.jst-mfg.com&lt;p&gt;
 <label x="63.5" y="-33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MOTOR" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
-<label x="27.94" y="22.86" size="1.778" layer="95"/>
+<pinref part="MOTOR" gate="G$1" pin="3"/>
+<wire x1="17.78" y1="27.94" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
+<label x="27.94" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PHASB" class="0">
@@ -2409,9 +2409,9 @@ http://www.jst-mfg.com&lt;p&gt;
 <label x="22.86" y="-33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MOTOR" gate="G$1" pin="3"/>
-<wire x1="17.78" y1="27.94" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
-<label x="27.94" y="27.94" size="1.778" layer="95"/>
+<pinref part="MOTOR" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<label x="27.94" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V3" class="0">

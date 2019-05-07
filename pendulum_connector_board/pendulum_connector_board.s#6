@@ -288,6 +288,52 @@ http://www.jst-mfg.com&lt;p&gt;
 <text x="-6.35" y="1.905" size="1.27" layer="25" rot="R270">&gt;NAME</text>
 <text x="5.08" y="1.905" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
 </package>
+<package name="SM07B-SRSS-TB">
+<description>&lt;b&gt;Shrouded Header, side entry type&lt;/b&gt;</description>
+<wire x1="-4.373" y1="-1.473" x2="-4.373" y2="2.523" width="0.254" layer="51"/>
+<wire x1="-4.373" y1="2.523" x2="4.373" y2="2.523" width="0.254" layer="51"/>
+<wire x1="4.373" y1="2.523" x2="4.373" y2="-1.473" width="0.254" layer="51"/>
+<wire x1="4.373" y1="-1.473" x2="-4.373" y2="-1.473" width="0.254" layer="51"/>
+<wire x1="-4.373" y1="0.5" x2="-4.373" y2="2.523" width="0.254" layer="21"/>
+<wire x1="-4.373" y1="2.523" x2="-4" y2="2.523" width="0.254" layer="21"/>
+<wire x1="4.373" y1="0.5" x2="4.373" y2="2.523" width="0.254" layer="21"/>
+<wire x1="4.373" y1="2.523" x2="4" y2="2.523" width="0.254" layer="21"/>
+<wire x1="-3" y1="-1.473" x2="3" y2="-1.473" width="0.254" layer="21"/>
+<smd name="1" x="-3" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="-2" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="3" x="-1" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="0" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="5" x="1" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="6" x="2" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="7" x="3" y="2.975" dx="0.6" dy="1.55" layer="1"/>
+<smd name="FIT@1" x="-4.3" y="-0.9" dx="1.2" dy="1.8" layer="1"/>
+<smd name="FIT@2" x="4.3" y="-0.9" dx="1.2" dy="1.8" layer="1"/>
+<text x="-5.715" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="6.985" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="BM07B-SRSS-TB">
+<description>&lt;b&gt;Shrouded Header, top entry type&lt;/b&gt;</description>
+<wire x1="-4.373" y1="1.473" x2="-4.373" y2="-1.427" width="0.254" layer="51"/>
+<wire x1="-4.373" y1="-1.427" x2="4.373" y2="-1.427" width="0.254" layer="51"/>
+<wire x1="4.373" y1="-1.427" x2="4.373" y2="1.473" width="0.254" layer="51"/>
+<wire x1="4.373" y1="1.473" x2="-4.373" y2="1.473" width="0.254" layer="51"/>
+<wire x1="-4.373" y1="-0.5" x2="-4.373" y2="-1.427" width="0.254" layer="21"/>
+<wire x1="-4.373" y1="-1.427" x2="-4" y2="-1.427" width="0.254" layer="21"/>
+<wire x1="4.373" y1="-0.5" x2="4.373" y2="-1.427" width="0.254" layer="21"/>
+<wire x1="4.373" y1="-1.427" x2="4" y2="-1.427" width="0.254" layer="21"/>
+<wire x1="-3" y1="1.473" x2="3" y2="1.473" width="0.254" layer="21"/>
+<smd name="7" x="-3" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
+<smd name="6" x="-2" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
+<smd name="5" x="-1" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="0" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
+<smd name="3" x="1" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="2" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
+<smd name="1" x="3" y="-1.625" dx="0.6" dy="1.55" layer="1"/>
+<smd name="FIT@1" x="4.3" y="0.9" dx="1.2" dy="1.8" layer="1"/>
+<smd name="FIT@2" x="-4.3" y="0.9" dx="1.2" dy="1.8" layer="1"/>
+<text x="-6.985" y="1.905" size="1.27" layer="25" rot="R270">&gt;NAME</text>
+<text x="5.715" y="1.905" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="KV">
@@ -404,6 +450,48 @@ http://www.jst-mfg.com&lt;p&gt;
 <connect gate="-4" pin="S" pad="4"/>
 <connect gate="-5" pin="S" pad="5"/>
 <connect gate="-6" pin="S" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="?M07B-SRSS-TB" prefix="X">
+<description>&lt;b&gt;Disconnectable Crimp style connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;7 contacts</description>
+<gates>
+<gate name="-1" symbol="KV" x="0" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="K" x="0" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="K" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="K" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="K" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-6" symbol="K" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-7" symbol="K" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="S" package="SM07B-SRSS-TB">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="B" package="BM07B-SRSS-TB">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2044,6 +2132,7 @@ http://www.jst-mfg.com&lt;p&gt;
 <part name="U$5" library="Ben_Library" deviceset="HEADER_2X12" device=""/>
 <part name="U$4" library="Ben_Library" deviceset="HEADER_1X25" device=""/>
 <part name="U$2" library="Ben_Library" deviceset="HEADER_2X12" device=""/>
+<part name="X1" library="con-jst2" deviceset="?M07B-SRSS-TB" device="B"/>
 </parts>
 <sheets>
 <sheet>
@@ -2070,6 +2159,13 @@ http://www.jst-mfg.com&lt;p&gt;
 <instance part="U$5" gate="G$1" x="30.48" y="-2.54"/>
 <instance part="U$4" gate="G$1" x="81.28" y="-45.72" rot="R270"/>
 <instance part="U$2" gate="G$1" x="104.14" y="-2.54"/>
+<instance part="X1" gate="-1" x="5.08" y="83.82"/>
+<instance part="X1" gate="-2" x="5.08" y="81.28"/>
+<instance part="X1" gate="-3" x="5.08" y="78.74"/>
+<instance part="X1" gate="-4" x="5.08" y="76.2"/>
+<instance part="X1" gate="-5" x="5.08" y="73.66"/>
+<instance part="X1" gate="-6" x="5.08" y="71.12"/>
+<instance part="X1" gate="-7" x="5.08" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -2141,6 +2237,11 @@ http://www.jst-mfg.com&lt;p&gt;
 <junction x="93.98" y="12.7"/>
 <pinref part="U$2" gate="G$1" pin="P$13"/>
 <junction x="119.38" y="12.7"/>
+</segment>
+<segment>
+<wire x1="2.54" y1="78.74" x2="-5.08" y2="78.74" width="0.1524" layer="91"/>
+<label x="-12.7" y="78.74" size="1.778" layer="95"/>
+<pinref part="X1" gate="-3" pin="S"/>
 </segment>
 </net>
 <net name="+24V" class="0">
@@ -2329,6 +2430,11 @@ http://www.jst-mfg.com&lt;p&gt;
 <pinref part="U$2" gate="G$1" pin="P$14"/>
 <junction x="119.38" y="10.16"/>
 </segment>
+<segment>
+<wire x1="2.54" y1="83.82" x2="-5.08" y2="83.82" width="0.1524" layer="91"/>
+<label x="-12.7" y="83.82" size="1.778" layer="95"/>
+<pinref part="X1" gate="-1" pin="S"/>
+</segment>
 </net>
 <net name="SER_A" class="0">
 <segment>
@@ -2489,12 +2595,22 @@ http://www.jst-mfg.com&lt;p&gt;
 <wire x1="119.38" y1="-2.54" x2="124.46" y2="-2.54" width="0.1524" layer="91"/>
 <label x="124.46" y="-2.54" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="2.54" y1="71.12" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
+<label x="-12.7" y="71.12" size="1.778" layer="95"/>
+<pinref part="X1" gate="-6" pin="S"/>
+</segment>
 </net>
 <net name="USART_RX" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P$18"/>
 <wire x1="119.38" y1="0" x2="124.46" y2="0" width="0.1524" layer="91"/>
 <label x="124.46" y="0" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="2.54" y1="68.58" x2="-5.08" y2="68.58" width="0.1524" layer="91"/>
+<label x="-12.7" y="68.58" size="1.778" layer="95"/>
+<pinref part="X1" gate="-7" pin="S"/>
 </segment>
 </net>
 <net name="NRST" class="0">
@@ -2503,12 +2619,22 @@ http://www.jst-mfg.com&lt;p&gt;
 <wire x1="93.98" y1="0" x2="88.9" y2="0" width="0.1524" layer="91"/>
 <label x="81.28" y="0" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="2.54" y1="73.66" x2="-5.08" y2="73.66" width="0.1524" layer="91"/>
+<label x="-12.7" y="73.66" size="1.778" layer="95"/>
+<pinref part="X1" gate="-5" pin="S"/>
+</segment>
 </net>
 <net name="TMS" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="P$5"/>
 <wire x1="93.98" y1="2.54" x2="88.9" y2="2.54" width="0.1524" layer="91"/>
 <label x="81.28" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="2.54" y1="76.2" x2="-5.08" y2="76.2" width="0.1524" layer="91"/>
+<label x="-12.7" y="76.2" size="1.778" layer="95"/>
+<pinref part="X1" gate="-4" pin="S"/>
 </segment>
 </net>
 <net name="TCK" class="0">
@@ -2517,12 +2643,10 @@ http://www.jst-mfg.com&lt;p&gt;
 <wire x1="93.98" y1="5.08" x2="88.9" y2="5.08" width="0.1524" layer="91"/>
 <label x="81.28" y="5.08" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$11" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$17"/>
-<wire x1="119.38" y1="2.54" x2="124.46" y2="2.54" width="0.1524" layer="91"/>
-<label x="124.46" y="2.54" size="1.778" layer="95"/>
+<wire x1="2.54" y1="81.28" x2="-5.08" y2="81.28" width="0.1524" layer="91"/>
+<label x="-12.7" y="81.28" size="1.778" layer="95"/>
+<pinref part="X1" gate="-2" pin="S"/>
 </segment>
 </net>
 </nets>

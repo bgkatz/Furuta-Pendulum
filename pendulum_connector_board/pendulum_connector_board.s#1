@@ -334,6 +334,24 @@ http://www.jst-mfg.com&lt;p&gt;
 <text x="-6.985" y="1.905" size="1.27" layer="25" rot="R270">&gt;NAME</text>
 <text x="5.715" y="1.905" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
 </package>
+<package name="SM02B-SSR-H-TB">
+<description>&lt;b&gt;Shrouded Header&lt;/b&gt;</description>
+<wire x1="-2.173" y1="-1.473" x2="-2.173" y2="1.573" width="0.254" layer="51"/>
+<wire x1="-2.173" y1="1.573" x2="2.173" y2="1.573" width="0.254" layer="51"/>
+<wire x1="2.173" y1="1.573" x2="2.173" y2="-1.473" width="0.254" layer="51"/>
+<wire x1="2.173" y1="-1.473" x2="-2.173" y2="-1.473" width="0.254" layer="51"/>
+<wire x1="-2.173" y1="0.5" x2="-2.173" y2="1.573" width="0.254" layer="21"/>
+<wire x1="-2.173" y1="1.573" x2="-1.5" y2="1.573" width="0.254" layer="21"/>
+<wire x1="2.173" y1="0.5" x2="2.173" y2="1.573" width="0.254" layer="21"/>
+<wire x1="2.173" y1="1.573" x2="1.5" y2="1.573" width="0.254" layer="21"/>
+<wire x1="-0.5" y1="-1.473" x2="0.5" y2="-1.473" width="0.254" layer="21"/>
+<smd name="1" x="-0.5" y="1.925" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="0.5" y="1.925" dx="0.6" dy="1.55" layer="1"/>
+<smd name="FIT@1" x="-2.1" y="-0.9" dx="1.2" dy="1.8" layer="1"/>
+<smd name="FIT@2" x="2.1" y="-0.9" dx="1.2" dy="1.8" layer="1"/>
+<text x="-3.81" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="KV">
@@ -492,6 +510,24 @@ http://www.jst-mfg.com&lt;p&gt;
 <connect gate="-5" pin="S" pad="5"/>
 <connect gate="-6" pin="S" pad="6"/>
 <connect gate="-7" pin="S" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SM02B-SSR-H-TB" prefix="X">
+<description>&lt;b&gt;Disconnectable Insulation displacement connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;2 contacts</description>
+<gates>
+<gate name="-1" symbol="KV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="K" x="0" y="0" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SM02B-SSR-H-TB">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2133,6 +2169,7 @@ http://www.jst-mfg.com&lt;p&gt;
 <part name="U$4" library="Ben_Library" deviceset="HEADER_1X25" device=""/>
 <part name="U$2" library="Ben_Library" deviceset="HEADER_2X12" device=""/>
 <part name="X1" library="con-jst2" deviceset="?M07B-SRSS-TB" device="S" value="SM07B-SRSS-TB"/>
+<part name="X4" library="con-jst2" deviceset="SM02B-SSR-H-TB" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2166,6 +2203,8 @@ http://www.jst-mfg.com&lt;p&gt;
 <instance part="X1" gate="-5" x="5.08" y="73.66"/>
 <instance part="X1" gate="-6" x="5.08" y="71.12"/>
 <instance part="X1" gate="-7" x="5.08" y="68.58"/>
+<instance part="X4" gate="-1" x="5.08" y="58.42"/>
+<instance part="X4" gate="-2" x="5.08" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -2242,6 +2281,11 @@ http://www.jst-mfg.com&lt;p&gt;
 <wire x1="2.54" y1="78.74" x2="-5.08" y2="78.74" width="0.1524" layer="91"/>
 <label x="-12.7" y="78.74" size="1.778" layer="95"/>
 <pinref part="X1" gate="-3" pin="S"/>
+</segment>
+<segment>
+<pinref part="X4" gate="-2" pin="S"/>
+<wire x1="2.54" y1="55.88" x2="-10.16" y2="55.88" width="0.1524" layer="91"/>
+<label x="-15.24" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+24V" class="0">
@@ -2407,6 +2451,11 @@ http://www.jst-mfg.com&lt;p&gt;
 <wire x1="38.1" y1="-35.56" x2="38.1" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="35.56" y="-35.56"/>
 <label x="22.86" y="-33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MOTOR" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<label x="27.94" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -2644,11 +2693,11 @@ http://www.jst-mfg.com&lt;p&gt;
 <pinref part="X1" gate="-2" pin="S"/>
 </segment>
 </net>
-<net name="PHASAB" class="0">
+<net name="MODE_SWITCH" class="0">
 <segment>
-<pinref part="MOTOR" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
-<label x="27.94" y="22.86" size="1.778" layer="95"/>
+<pinref part="X4" gate="-1" pin="S"/>
+<wire x1="2.54" y1="58.42" x2="-10.16" y2="58.42" width="0.1524" layer="91"/>
+<label x="-15.24" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

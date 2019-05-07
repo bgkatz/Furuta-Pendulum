@@ -2114,11 +2114,11 @@ http://www.jst-mfg.com&lt;p&gt;
 </class>
 </classes>
 <parts>
-<part name="MOTOR" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS3_?" device="43650-0300"/>
+<part name="MOTOR" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS3_?" device="43650-0315"/>
 <part name="DC" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43650-0215"/>
 <part name="SERIAL" library="con-jst2" deviceset="?M04B-SRSS-TB" device="B" value="BM04B-SRSS-TB"/>
-<part name="ENCODER" library="con-jst2" deviceset="?M05B-SRSS-TB" device="S"/>
-<part name="PENDULUM" library="con-jst2" deviceset="?M06B-SRSS-TB" device="S"/>
+<part name="ENCODER" library="con-jst2" deviceset="?M05B-SRSS-TB" device="B" value="BM05B-SRSS-TB"/>
+<part name="PENDULUM" library="con-jst2" deviceset="?M06B-SRSS-TB" device="B" value="BM06B-SRSS-TB"/>
 <part name="U$5" library="Ben_Library" deviceset="HEADER_2X12" device=""/>
 <part name="U$2" library="Ben_Library" deviceset="HEADER_2X10" device=""/>
 <part name="U$4" library="Ben_Library" deviceset="HEADER_1X25" device=""/>
@@ -2270,11 +2270,6 @@ http://www.jst-mfg.com&lt;p&gt;
 </net>
 <net name="PHASA" class="0">
 <segment>
-<pinref part="MOTOR" gate="G$1" pin="3"/>
-<wire x1="17.78" y1="27.94" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
-<label x="27.94" y="27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$4" gate="G$1" pin="P$8"/>
 <wire x1="63.5" y1="-40.64" x2="63.5" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="P$7"/>
@@ -2309,6 +2304,11 @@ http://www.jst-mfg.com&lt;p&gt;
 <wire x1="60.96" y1="-35.56" x2="63.5" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="63.5" y="-35.56"/>
 <label x="63.5" y="-33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MOTOR" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<label x="27.94" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PHASB" class="0">
@@ -2352,11 +2352,6 @@ http://www.jst-mfg.com&lt;p&gt;
 </net>
 <net name="PHASC" class="0">
 <segment>
-<pinref part="MOTOR" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
-<label x="27.94" y="22.86" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$4" gate="G$1" pin="P$25"/>
 <wire x1="20.32" y1="-40.64" x2="20.32" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="P$24"/>
@@ -2387,6 +2382,11 @@ http://www.jst-mfg.com&lt;p&gt;
 <wire x1="38.1" y1="-35.56" x2="38.1" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="35.56" y="-35.56"/>
 <label x="22.86" y="-33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MOTOR" gate="G$1" pin="3"/>
+<wire x1="17.78" y1="27.94" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
+<label x="27.94" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V3" class="0">
