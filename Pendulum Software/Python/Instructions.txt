@@ -1,0 +1,16 @@
+Requires Python 3.6 or greater.
+
+This python demo implements an energy-shaping swing-up controller and lineanear controller to stabilize the furuta pendulum about the upright position.
+
+To test the program in the console, run pendulum_loop.py
+Modify the serial port in the program to match the device's serial port on your computer.  When run, you should see the printed value (pendulum angle) oscilate, then stabilize to 0.  Try pressing the reset button (black) on the microcontroller if it does not work.
+
+
+pendulum_gui.py live-plots the pendulum angle.
+To run, you will need to install QT (open-source version), PyQt5, pyqtgraph, and pandas
+
+The pendulum protocol is in pendulum.py.
+
+The microcontroller firmware can be found here:
+https://os.mbed.com/users/benkatz/code/Pendulum_demo/
+This demo simulates the furuta pendulum dynamics, simulates the sensor outputs, and communicates over serial.
