@@ -11737,6 +11737,18 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <label x="165.1" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="MODE_SWITCH" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="P$16"/>
+<wire x1="160.02" y1="-20.32" x2="165.1" y2="-20.32" width="0.1524" layer="91"/>
+<label x="165.1" y="-20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="PC2"/>
+<wire x1="63.5" y1="124.46" x2="58.42" y2="124.46" width="0.1524" layer="91"/>
+<label x="55.88" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

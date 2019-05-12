@@ -2408,6 +2408,11 @@ http://www.jst-mfg.com&lt;p&gt;
 <junction x="35.56" y="-35.56"/>
 <label x="22.86" y="-33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="MOTOR" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<label x="27.94" y="22.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="3V3" class="0">
 <segment>
@@ -2642,13 +2647,6 @@ http://www.jst-mfg.com&lt;p&gt;
 <wire x1="2.54" y1="81.28" x2="-5.08" y2="81.28" width="0.1524" layer="91"/>
 <label x="-12.7" y="81.28" size="1.778" layer="95"/>
 <pinref part="X1" gate="-2" pin="S"/>
-</segment>
-</net>
-<net name="PHASAB" class="0">
-<segment>
-<pinref part="MOTOR" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
-<label x="27.94" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

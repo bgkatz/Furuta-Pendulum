@@ -2132,7 +2132,7 @@ http://www.jst-mfg.com&lt;p&gt;
 <part name="U$5" library="Ben_Library" deviceset="HEADER_2X12" device=""/>
 <part name="U$4" library="Ben_Library" deviceset="HEADER_1X25" device=""/>
 <part name="U$2" library="Ben_Library" deviceset="HEADER_2X12" device=""/>
-<part name="X1" library="con-jst2" deviceset="?M07B-SRSS-TB" device="B"/>
+<part name="X1" library="con-jst2" deviceset="?M07B-SRSS-TB" device="S" value="SM07B-SRSS-TB"/>
 </parts>
 <sheets>
 <sheet>
