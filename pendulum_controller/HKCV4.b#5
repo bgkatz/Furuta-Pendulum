@@ -4038,6 +4038,9 @@ design rules under a new name.</description>
 <signal name="N$11">
 <contactref element="U$2" pad="P$17"/>
 </signal>
+<signal name="MODE_SWITCH">
+<contactref element="U$2" pad="P$16"/>
+</signal>
 </signals>
 <errors>
 <approved hash="5,1,9de377ba43ac5991"/>

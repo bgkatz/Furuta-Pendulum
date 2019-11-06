@@ -7,6 +7,7 @@ Created on Sat Aug 27 14:48:26 2016
 import serial
 from struct import *
 import math
+import time
 
 class pendulum():
     def __init__(self, COM, DT):
@@ -30,7 +31,8 @@ class pendulum():
         self.q1des = 0
         self.qd0des = 0
         self.qd1des = 0
-
+        self.first_read = 1;
+        self.q1_control = 0;
 
         self.e0_rotations = 0
         self.e1_rotations = 0
@@ -39,8 +41,8 @@ class pendulum():
         self.q0_old = 0
         self.q1_old = 0
 
-        self.CPR0 = 4096
-        self.CPR1 = 4096
+        self.CPR0 = 20000
+        self.CPR1 = 16384
 
 
         try:
@@ -54,6 +56,9 @@ class pendulum():
 
         try:
 
+            #self.readQ1()
+            #self.readQD0()
+            #self.readQD1()
             self.readEncoders()
             self.stateFromEncoder()
             self.control()
@@ -129,45 +134,56 @@ class pendulum():
             except:
                 pass
     def readEncoders(self):
-            try:
+            #try:
                 
-                self.ser.write(b'\x00\x00\x00\x00\x08')
-                b = self.ser.read(5)
-                self.encoderCount1 = (b[3]<<8) + b[2]
-                self.encoderCount0 = (b[1]<<8) + b[0]
-                self.ser.flushInput()
-                
-            except:
-                pass
+            self.ser.write(b'\x00\x00\x00\x00\x08')
+            b = self.ser.read(5)
+            self.encoderCount1 = (b[3]<<8) + b[2]
+            self.encoderCount0 = (b[1]<<8) + b[0]
+            self.ser.flushInput()
+
+    def enable(self):
+            #try:
+        self.ser.write(b'\x00\x00\x00\x00\x09')
+    def disable(self):
+            #try:
+        self.ser.write(b'\x00\x00\x00\x00\x0A')
+    
+            #except:
+            #    pass
 
     def control(self):
-        
-        if(abs(self.q1)> .7):
-            c = math.cos(self.q1)
-            self.tau = .0001*(c*c*c*c)*self.qd1*(9.81*(1.0-c) - self.qd1*self.qd1*.0075);
+        self.q1_control = math.fmod(self.q1, 2*math.pi)
+        if(self.q1_control <0):
+            self.q1_control = self.q1_control + 2*math.pi
+        if(abs(self.q1_control-math.pi)> .7):
+            c = math.cos(self.q1_control-math.pi)
+            self.tau = .000075*(c*c*c*c)*self.qd1*(9.81*(1.0-c) - self.qd1*self.qd1*.0075);
         else:
-            self.tau = 0.01*self.qd0 + 1*self.q1 + .05*self.qd1;
-            
+            self.tau = .25*0.05*self.qd0 + .25*1.5*(self.q1_control-math.pi) + .25*.1*self.qd1;
+
         #self.tau = 1*(5 - self.q0) + .05*(-self.qd0)
-        self.tau = min(max(-.1, self.tau), .1)
+        self.tau = min(max(-.2, self.tau), .2)
 
     def stateFromEncoder(self):
         
-        if((self.encoderCount0 - self.e0_old) > (self.CPR0/2)):
-            self.e0_rotations -= 1
-        elif((-self.encoderCount0 + self.e0_old) > (self.CPR0/2)):
-            self.e0_rotations += 1
-        if((self.encoderCount1 - self.e1_old) > (self.CPR1/2)):
-            self.e1_rotations -= 1
-        elif((-self.encoderCount1 + self.e1_old) > (self.CPR1/2)):
-            self.e1_rotations += 1
+        if(self.first_read != 0):
+            if((self.encoderCount0 - self.e0_old) > (self.CPR0/2)):
+                self.e0_rotations -= 1
+            elif((-self.encoderCount0 + self.e0_old) > (self.CPR0/2)):
+                self.e0_rotations += 1
+            if((self.encoderCount1 - self.e1_old) > (self.CPR1/2)):
+                self.e1_rotations -= 1
+            elif((-self.encoderCount1 + self.e1_old) > (self.CPR1/2)):
+                self.e1_rotations += 1
+            self.first_read = 0
         
         self.q0 = 2*math.pi*self.e0_rotations + 2*math.pi*self.encoderCount0/self.CPR0
         self.q1 = 2*math.pi*self.e1_rotations + 2*math.pi*self.encoderCount1/self.CPR1
 
 
-        self.qd0 = (self.q0 - self.q0_old)/self.dt
-        self.qd1 = (self.q1 - self.q1_old)/self.dt
+        self.qd0 = (self.q0 - self.q0_old)/(self.dt*2)
+        self.qd1 = (self.q1 - self.q1_old)/(self.dt*2)
         self.e0_old = self.encoderCount0
         self.e1_old = self.encoderCount1
         self.q0_old = self.q0

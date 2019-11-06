@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-08-11T19:01:01Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "pendulum_input_board"
+        },
+        "Owner": "Ben Katz <benkatz@mit.edu>",
+        "Size": {
+            "X": 89,
+            "Y": 37
+        }
+    }
+}
