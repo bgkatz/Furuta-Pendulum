@@ -1,0 +1,7 @@
+Partlist exported from C:/Users/ben/Documents/GitHub/Furuta-Pendulum/pendulum_encoder_board/pendulum_encoder_board.sch at 8/29/2020 8:45 AM
+
+Qty Value         Device        Package       Parts    Description                                                 
+1                 CPOL-USE2.5-5 E2,5-5        C2       POLARIZED CAPACITOR, American symbol                        
+1   .1 uF         C-USC0402K    C0402K        C18      CAPACITOR, American symbol                                  
+1   MA700         MA700         QFN16         U$11                                                                 
+1   SM06B-SRSS-TB SM06B-SRSS-TB SM06B-SRSS-TB PENDULUM Disconnectable Crimp style connector, 1.0mm pitch6 contacts 

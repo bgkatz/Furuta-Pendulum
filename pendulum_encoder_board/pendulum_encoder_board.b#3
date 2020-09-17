@@ -1597,16 +1597,16 @@ design rules under a new name.</description>
 <contactref element="C2" pad="-"/>
 <wire x1="-0.75" y1="-1.475" x2="-0.75" y2="-0.75" width="0.16" layer="16"/>
 <wire x1="-0.75" y1="-0.75" x2="-0.375" y2="-0.375" width="0.16" layer="16"/>
-<wire x1="-1.5" y1="1.475" x2="-1.25" y2="2.75" width="0.16" layer="1"/>
-<wire x1="-1.25" y1="2.75" x2="-1.75" y2="3.25" width="0.16" layer="1"/>
-<wire x1="-1.75" y1="3.25" x2="-3.09" y2="3.25" width="0.16" layer="1"/>
+<wire x1="-1.5" y1="1.475" x2="-1.5" y2="2.75" width="0.16" layer="1"/>
+<wire x1="-1.5" y1="2.75" x2="-2" y2="3.25" width="0.16" layer="1"/>
+<wire x1="-2" y1="3.25" x2="-3.09" y2="3.25" width="0.16" layer="1"/>
 <wire x1="-3.09" y1="3.25" x2="-3.43" y2="3.34" width="0.16" layer="1"/>
 <wire x1="-1.5" y1="1.475" x2="-1.25" y2="0.5" width="0.16" layer="1"/>
 <wire x1="-1.25" y1="0.5" x2="-0.375" y2="-0.375" width="0.16" layer="1"/>
 <via x="-0.375" y="-0.375" extent="1-16" drill="0.3"/>
 <wire x1="-0.375" y1="-0.375" x2="0" y2="0" width="0.16" layer="16"/>
 <wire x1="1.27" y1="5" x2="1" y2="5" width="0.16" layer="1"/>
-<wire x1="1" y1="5" x2="-1.25" y2="2.75" width="0.16" layer="1"/>
+<wire x1="1" y1="5" x2="-1.5" y2="2.75" width="0.16" layer="1"/>
 </signal>
 <signal name="3V3">
 <contactref element="C18" pad="1"/>
@@ -1639,10 +1639,10 @@ design rules under a new name.</description>
 <wire x1="2.25" y1="-0.75" x2="2.5" y2="-0.5" width="0.16" layer="16"/>
 <wire x1="2.5" y1="-0.5" x2="2.5" y2="1.75" width="0.16" layer="16"/>
 <wire x1="2.5" y1="1.75" x2="1.25" y2="3" width="0.16" layer="16"/>
-<wire x1="1.25" y1="3" x2="0" y2="3" width="0.16" layer="16"/>
-<wire x1="0" y1="3" x2="-0.25" y2="2.75" width="0.16" layer="16"/>
-<via x="-0.25" y="2.75" extent="1-16" drill="0.3"/>
-<wire x1="-0.25" y1="2.75" x2="-0.5" y2="1.475" width="0.16" layer="1"/>
+<wire x1="1.25" y1="3" x2="-0.25" y2="3" width="0.16" layer="16"/>
+<wire x1="-0.25" y1="3" x2="-0.5" y2="2.75" width="0.16" layer="16"/>
+<via x="-0.5" y="2.75" extent="1-16" drill="0.3"/>
+<wire x1="-0.5" y1="2.75" x2="-0.5" y2="1.475" width="0.16" layer="1"/>
 </signal>
 <signal name="MISO">
 <contactref element="U$11" pad="7"/>

@@ -1,0 +1,13 @@
+Partlist exported from C:/Users/ben/Documents/GitHub/Furuta-Pendulum/pendulum_connector_board/pendulum_connector_board.sch at 8/29/2020 10:55 AM
+
+Qty Value          Device                 Package        Parts      Description                                                                         
+3                  CPOL-USE2.5-6          E2,5-6         C1, C2, C3 POLARIZED CAPACITOR, American symbol                                                
+1                  HEADER_POS2_43650-0200 43650-0200     DC         Molex - Micro-Fit 3.0 Series connector,  3.00mm (0.118") pitch header, 2 positions. 
+1                  HEADER_POS3_43650-0300 43650-0300     MOTOR      Molex - Micro-Fit 3.0 Series connector,  3.00mm (0.118") pitch header, 3 positions. 
+1   HEADER_1X25    HEADER_1X25            1X25X.05       U$4                                                                                            
+2   HEADER_2X12    HEADER_2X12            2X12X.05       U$2, U$5                                                                                       
+1   SM02B-SSR-H-TB SM02B-SSR-H-TB         SM02B-SSR-H-TB X4         Disconnectable Insulation displacement connector, 1.0mm pitch2 contacts             
+1   SM04B-SRSS-TB  SM04B-SRSS-TB          SM04B-SRSS-TB  SERIAL     Disconnectable Crimp style connector, 1.0mm pitch4 contacts                         
+1   SM05B-SRSS-TB  SM05B-SRSS-TB          SM05B-SRSS-TB  ENCODER    Disconnectable Crimp style connector, 1.0mm pitch5 contacts                         
+1   SM06B-SRSS-TB  SM06B-SRSS-TB          SM06B-SRSS-TB  PENDULUM   Disconnectable Crimp style connector, 1.0mm pitch6 contacts                         
+1   SM07B-SRSS-TB  SM07B-SRSS-TB          SM07B-SRSS-TB  X1         Disconnectable Crimp style connector, 1.0mm pitch7 contacts                         

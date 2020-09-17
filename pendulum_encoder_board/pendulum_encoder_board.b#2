@@ -1583,8 +1583,8 @@ design rules under a new name.</description>
 <elements>
 <element name="C18" library="rcl" package="C0402K" value=".1 uF" x="-3.43" y="2.74" smashed="yes" rot="R90"/>
 <element name="U$11" library="BenLibrary" package="QFN16" value="MA700" x="0" y="0" smashed="yes" rot="MR0"/>
-<element name="C2" library="rcl" package="E2,5-5" value="" x="0" y="5" smashed="yes">
-<attribute name="VALUE" x="2.413" y="2.587" size="1.27" layer="27" ratio="10"/>
+<element name="C2" library="rcl" package="E2,5-5" value="" x="0" y="5.25" smashed="yes">
+<attribute name="VALUE" x="2.413" y="2.837" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="PENDULUM" library="con-jst2" package="SM06B-SRSS-TB" value="SM06B-SRSS-TB" x="0" y="-1.5" smashed="yes"/>
 </elements>
@@ -1605,7 +1605,7 @@ design rules under a new name.</description>
 <wire x1="-1.25" y1="0.5" x2="-0.375" y2="-0.375" width="0.16" layer="1"/>
 <via x="-0.375" y="-0.375" extent="1-16" drill="0.3"/>
 <wire x1="-0.375" y1="-0.375" x2="0" y2="0" width="0.16" layer="16"/>
-<wire x1="1.27" y1="5" x2="1" y2="5" width="0.16" layer="1"/>
+<wire x1="1.27" y1="5.25" x2="1" y2="5" width="0.16" layer="1"/>
 <wire x1="1" y1="5" x2="-1.5" y2="2.75" width="0.16" layer="1"/>
 </signal>
 <signal name="3V3">
@@ -1614,7 +1614,7 @@ design rules under a new name.</description>
 <contactref element="PENDULUM" pad="1"/>
 <contactref element="C2" pad="+"/>
 <wire x1="-0.75" y1="1.475" x2="-0.75" y2="4.48" width="0.16" layer="16"/>
-<wire x1="-0.75" y1="4.48" x2="-1.27" y2="5" width="0.16" layer="16"/>
+<wire x1="-0.75" y1="4.48" x2="-1.27" y2="5.25" width="0.16" layer="16"/>
 <wire x1="-2.5" y1="1.475" x2="-3.015" y2="1.475" width="0.16" layer="1"/>
 <wire x1="-3.015" y1="1.475" x2="-3.43" y2="2.14" width="0.16" layer="1"/>
 <wire x1="-2.5" y1="1.475" x2="-2.25" y2="2.5" width="0.16" layer="1"/>

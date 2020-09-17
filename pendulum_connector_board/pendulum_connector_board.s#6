@@ -2126,9 +2126,9 @@ http://www.jst-mfg.com&lt;p&gt;
 <parts>
 <part name="MOTOR" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS3_?" device="43650-0315"/>
 <part name="DC" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS2_?" device="43650-0215"/>
-<part name="SERIAL" library="con-jst2" deviceset="?M04B-SRSS-TB" device="B" value="BM04B-SRSS-TB"/>
-<part name="ENCODER" library="con-jst2" deviceset="?M05B-SRSS-TB" device="B" value="BM05B-SRSS-TB"/>
-<part name="PENDULUM" library="con-jst2" deviceset="?M06B-SRSS-TB" device="B" value="BM06B-SRSS-TB"/>
+<part name="SERIAL" library="con-jst2" deviceset="?M04B-SRSS-TB" device="S" value="SM04B-SRSS-TB"/>
+<part name="ENCODER" library="con-jst2" deviceset="?M05B-SRSS-TB" device="S" value="SM05B-SRSS-TB"/>
+<part name="PENDULUM" library="con-jst2" deviceset="?M06B-SRSS-TB" device="S" value="SM06B-SRSS-TB"/>
 <part name="U$5" library="Ben_Library" deviceset="HEADER_2X12" device=""/>
 <part name="U$4" library="Ben_Library" deviceset="HEADER_1X25" device=""/>
 <part name="U$2" library="Ben_Library" deviceset="HEADER_2X12" device=""/>

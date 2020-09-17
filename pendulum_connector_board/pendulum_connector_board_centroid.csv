@@ -1,0 +1,13 @@
+Screaming Circuits SMD component position file.
+Created by Centroid_ScreamingCircuits_smd.ulp 1.2.0.
+
+Centroid Data for pc board: "pendulum_connector_board.brd" as of: 8/29/2020 11:40 AM
+Measurements are in inches. Comma delimited
+Only surface mount components included
+
+RefDes,Layer,LocationX,LocationY,Rotation
+ENCODER,Top,-0.274,0.483,180
+PENDULUM,Top,-0.604,0.483,180
+SERIAL,Top,0.406,0.484,180
+X1,Top,0.076,0.483,180
+X4,Top,0.655,0.485,180
